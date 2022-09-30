@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Viewport width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Css link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Google Advanced Search</title>
+</head>
+<body>
+    <!--Header start-->
+    <div class="header_advanced">
+        <div class="header_advanced_logo">
+            <a href="index.html">
+                <img src="images/googlelogo_color_272x92dp.png" alt="Google Logo">
+            </a>
+        </div>
+        <div class="headerLinks">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Google Images</a>
+        </div>
+    </div> <!--Header end-->
+
+    <div class="pagetitle">
+        <label>Advanced Search</label>
+    </div>
+
+    <div class="break_line"></div>
+
+    <div class="advanced_search_container">
+        <form action="https://www.google.com/search" method="get">
+            <label>Find pages with...</label>
+            <div class="wspace"></div>
+            <label>To do this in the search box.</label>
+            
+            <!---Advanced search form-->
+            <div class="advanced_form">
+                <label>all these words:</label>
+                <input type="text" name="as_q">
+                <div class="gibberish">Type the important words: <span class="monospace">tri-colour rat terrier<span></span></div>
+            </div>
+            <div class="advanced_form">
+                <label>this exact word or phrase:</label>
+                <input type="text" name="as_epq">
+                <div class="gibberish">Put exact words in quotes: <span class="monospace">"rat terrier"</span></div>
+            </div>
+            <div class="advanced_form">    
+                <label>any of these words:</label>
+                <input type="text" name="as_oq">
+                <div class="gibberish">Type OR between all the words you want: <span class="monospace">miniature OR standard</span></div>
+            </div>
+            <div class="advanced_form">    
+                <label>none of these words:</label>
+                <input type="text" name="as_eq">
+                <div class="gibberish">Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack Russell"</span></div> 
+            </div>
+
+            <div class="right-align">
+                <input type="submit" class="blue-button" value="Advanced Search">
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
